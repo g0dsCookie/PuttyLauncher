@@ -23,6 +23,8 @@ namespace CookieProjects.PuttyLauncher
 
 		public bool LoadSessions { get; set; }
 
+		public List<string> IgnoreSessions { get; set; } = new List<string>();
+
 		public List<string> PrivateKeys { get; set; } = new List<string>();
 
 		public void Save(string file)

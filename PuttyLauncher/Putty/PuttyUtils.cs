@@ -59,7 +59,9 @@ namespace CookieProjects.PuttyLauncher.Putty
 		{
 			var sessionList = new List<string>();
 			using (var baseKey = Registry.CurrentUser.OpenSubKey(RegistrySessions, false))
-				sessionList.AddRange(baseKey.GetSubKeyNames());
+				foreach (var s in baseKey.GetSubKeyNames())
+					if (!Config.GlobalConfig.IgnoreSessions.Contains(s))
+						sessionList.Add(s);
 			return sessionList.ToArray();
 		}
 
