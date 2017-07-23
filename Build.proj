@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Start">
+	<PropertyGroup>
+		<MainReleaseDir>bin</MainReleaseDir>
+		<ReleaseDir>$(MainReleaseDir)\PuttyLauncher</ReleaseDir>
+		<OutDir>src\PuttyLauncher\bin\Release</OutDir>
+	</PropertyGroup>
+
+	<Target Name="Start">
+		<CallTarget Targets="Cleanup"/>
+		<CallTarget Targets="Build"/>
+		<CallTarget Targets="Copy"/>
+	</Target>
+	
+	<Target Name="Cleanup">
+		<RemoveDir Directories="$(MainReleaseDir)"/>
+	</Target>
+
+	<Target Name="Build">
+		<MSBuild Projects="src\PuttyLauncher.sln" Properties="Configuration=Release"/>
+	</Target>
+
+	<Target Name="Copy">
+		<MakeDir Directories="$(ReleaseDir)"/>
+		<ItemGroup>
+			<ReleaseFiles Include="$(OutDir)\**\*.*;README.md;LICENSE" Exclude="$(OutDir)\*.pdb;$(OutDir)\*.xml;$(OutDir)\WinCommandPalette.Plugin.dll"/>
+		</ItemGroup>
+		<Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles -> '$(ReleaseDir)\%(RecursiveDir)%(Filename)%(Extension)')"/>
+	</Target>
+</Project>
