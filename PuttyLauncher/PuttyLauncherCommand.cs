@@ -1,32 +1,41 @@
 ﻿using CookieProjects.PuttyLauncher.Putty;
-using System.Diagnostics;
 using WinCommandPalette.Plugin.CommandBase;
 
 namespace CookieProjects.PuttyLauncher
 {
 	public class PuttyLauncherCommand : ICommandBase
 	{
-		public string Name { get; }
+		public string Name { get; set; }
 
-		public string Description { get; }
+		public string Description { get; set; }
 
 		public System.Drawing.Image Icon => null;
 
 		public bool RunInUIThread => false;
 
-		public string Session { get; }
+		public PuttyArgumentsBase Arguments { get; set; }
 
-		public PuttyLauncherCommand(string session)
+		public PuttyLauncherCommand() { }
+
+		public PuttyLauncherCommand(PuttyLoadSession session)
 		{
-			this.Name = $"PuTTY: {session}";
-			this.Description = $"Launch PuTTY session \"{session}\"";
-			this.Session = session;
+			this.Name = $"PuTTY: {session.Session}";
+			this.Description = $"Launch PuTTY session \"{session.Session}\"";
+			this.Arguments = session;
+		}
+
+		public PuttyLauncherCommand(PuttyArgumentsBase arguments, string name, string description)
+		{
+			this.Arguments = arguments;
+			this.Name = name;
+			this.Description = description;
 		}
 
 		public void Execute()
 		{
-			var pInfo = new ProcessStartInfo(PuttyUtils.PuttyPath, $"-load \"{this.Session}\"");
-			Process.Start(pInfo);
+			var wrapper = new PuttyWrapper(PuttyUtils.PuttyPath);
+			wrapper.Arguments = this.Arguments;
+			wrapper.Start();
 		}
 	}
 }

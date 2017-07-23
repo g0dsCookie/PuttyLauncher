@@ -11,6 +11,8 @@
     <AssemblyName>PuttyLauncher</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,9 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,14 +47,45 @@
     <Reference Include="WinCommandPalette.Plugin">
       <HintPath>C:\WinCommandPalette\WinCommandPalette.Plugin.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Controls\NumericUpDown.xaml.cs">
+      <DependentUpon>NumericUpDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePuttyLauncherCommand.xaml.cs">
+      <DependentUpon>CreatePuttyLauncherCommand.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PuttyLauncherCommand.cs" />
     <Compile Include="PuttyLauncherPlugin.cs" />
     <Compile Include="PuttyLoadPrivateKeysCommand.cs" />
+    <Compile Include="Putty\PuttyArgumentsBase.cs" />
+    <Compile Include="Putty\PuttyIPVersion.cs" />
+    <Compile Include="Putty\PuttyLoadSession.cs" />
+    <Compile Include="Putty\PuttyRaw.cs" />
+    <Compile Include="Putty\PuttyRlogin.cs" />
+    <Compile Include="Putty\PuttySerial.cs" />
+    <Compile Include="Putty\PuttySerialFlowControl.cs" />
+    <Compile Include="Putty\PuttyForward.cs" />
+    <Compile Include="Putty\PuttyProtocol.cs" />
+    <Compile Include="Putty\PuttySerialConfiguration.cs" />
+    <Compile Include="Putty\PuttySerialParity.cs" />
+    <Compile Include="Putty\PuttySSH.cs" />
+    <Compile Include="Putty\PuttyTelnet.cs" />
     <Compile Include="Putty\PuttyUtils.cs" />
+    <Compile Include="Putty\PuttyWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\NumericUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreatePuttyLauncherCommand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

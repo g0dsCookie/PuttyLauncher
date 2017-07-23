@@ -21,7 +21,7 @@ namespace CookieProjects.PuttyLauncher
 			if (Config.GlobalConfig.LoadSessions)
 			{
 				var sessions = PuttyUtils.GetSessions();
-				AutoRegisterCommands.AddRange(from string s in sessions select new PuttyLauncherCommand(s));
+				AutoRegisterCommands.AddRange(from string s in sessions select new PuttyLauncherCommand(new PuttyLoadSession(s)));
 				AutoRegisterCommands.Add(new PuttyLoadPrivateKeysCommand(PuttyUtils.GetPrivateKeys(sessions)));
 			}
 			else

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="CookieProjects.PuttyLauncher.Controls.NumericUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+	<Border BorderBrush="LightGray" BorderThickness="1">
+	<Grid>
+		<Grid.Resources>
+			<Style TargetType="{x:Type Button}">
+				<Setter Property="Background" Value="White"/>
+				<Setter Property="BorderThickness" Value="0"/>
+				<Setter Property="FontFamily" Value="Arial"/>
+				<Setter Property="FontSize" Value="6"/>
+				<Setter Property="Margin" Value="0"/>
+			</Style>
+			<Style TargetType="{x:Type TextBox}">
+				<Setter Property="Background" Value="White"/>
+				<Setter Property="BorderThickness" Value="0"/>
+				<Setter Property="TextAlignment" Value="Right"/>
+				<Setter Property="VerticalContentAlignment" Value="Center"/>
+				<Setter Property="Margin" Value="0"/>
+			</Style>
+		</Grid.Resources>
+		
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="10"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="12*"/>
+			<RowDefinition Height="12*"/>
+		</Grid.RowDefinitions>
+
+		<TextBox Name="tbValue" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"  PreviewTextInput="tbValue_PreviewTextInput" TextChanged="tbValue_TextChanged" PreviewKeyUp="tbValue_PreviewKeyUp"/>
+
+		<Button x:Name="Increase" Content="▲" Grid.Column="1" Grid.Row="0" Click="Increase_Click"/>
+		<Button x:Name="Decrease" Content="▼" Grid.Column="1" Grid.Row="1" Click="Decrease_Click"/>
+	</Grid>
+	</Border>
+</UserControl>
