@@ -9,7 +9,7 @@ msbuild Build.proj
 
 echo "Zipping Folder..."
 cd bin
-7z a -tzip -mx9 -y PuttyLauncher.zip PuttyLauncher\
+7z a -tzip -mx9 -y PuttyLauncher.zip *
 cd ..
 
 echo "Done!"

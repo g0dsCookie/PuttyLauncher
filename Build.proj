@@ -2,7 +2,7 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Start">
 	<PropertyGroup>
 		<MainReleaseDir>bin</MainReleaseDir>
-		<ReleaseDir>$(MainReleaseDir)\PuttyLauncher</ReleaseDir>
+		<ReleaseDir>$(MainReleaseDir)\Plugins\PuttyLauncher</ReleaseDir>
 		<OutDir>src\PuttyLauncher\bin\Release</OutDir>
 	</PropertyGroup>
 
@@ -23,7 +23,7 @@
 	<Target Name="Copy">
 		<MakeDir Directories="$(ReleaseDir)"/>
 		<ItemGroup>
-			<ReleaseFiles Include="$(OutDir)\**\*.*;README.md;LICENSE" Exclude="$(OutDir)\*.pdb;$(OutDir)\*.xml;$(OutDir)\WinCommandPalette.Plugin.dll"/>
+			<ReleaseFiles Include="$(OutDir)\PuttyLauncher.dll;README.md;LICENSE"/>
 		</ItemGroup>
 		<Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles -> '$(ReleaseDir)\%(RecursiveDir)%(Filename)%(Extension)')"/>
 	</Target>

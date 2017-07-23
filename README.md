@@ -9,7 +9,7 @@ You can also create your own putty commands for SSH, Telnet, Rlogin, Raw and Ser
 
 # Installation
 
-Download the latest release and extract the .zip file. Copy the *PuttyLauncher* directory into your *Plugins* directory
+Download the latest release and extract the .zip file. Copy the *PuttyLauncher* directory into your *WinCommandPalette* directory
 and finally restart WinCommandPalette.
 
 # Reload sessions
