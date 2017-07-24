@@ -21,9 +21,9 @@ namespace CookieProjects.PuttyLauncher.Putty
 		public PuttySerialConfiguration(uint baud, byte dataBits, float stopBits, PuttySerialParity parity, PuttySerialFlowControl flowControl)
 		{
 			if (!ValidateDataBits(dataBits))
-				throw new ArgumentOutOfRangeException(nameof(dataBits), dataBits, $"{nameof(dataBits)} must be between 5 and 9.");
+				throw new ArgumentOutOfRangeException(nameof(dataBits), dataBits, Localization.strings.Exception_Serial_DataBits_OutOfRange);
 			if (!ValidateStopBits(stopBits))
-				throw new ArgumentOutOfRangeException(nameof(stopBits), stopBits, $"{nameof(stopBits)} must be 1, 1.5 or 2.");
+				throw new ArgumentOutOfRangeException(nameof(stopBits), stopBits, Localization.strings.Exception_Serial_StopBits_OutOfRange);
 
 			this.BaudRate = baud;
 			this.DataBits = dataBits;

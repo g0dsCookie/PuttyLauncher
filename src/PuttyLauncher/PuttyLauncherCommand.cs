@@ -19,8 +19,8 @@ namespace CookieProjects.PuttyLauncher
 
 		public PuttyLauncherCommand(PuttyLoadSession session)
 		{
-			this.Name = $"PuTTY: {session.Session}";
-			this.Description = $"Launch PuTTY session \"{session.Session}\"";
+			this.Name = Localization.strings.PuttyLauncher_Name.Replace("{{session}}", session.Session);
+			this.Description = Localization.strings.PuttyLauncher_Description.Replace("{{session}}", session.Session);
 			this.Arguments = session;
 		}
 

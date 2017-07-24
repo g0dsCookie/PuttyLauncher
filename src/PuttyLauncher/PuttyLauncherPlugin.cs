@@ -11,7 +11,7 @@ namespace CookieProjects.PuttyLauncher
 		public override PluginMeta PluginMeta => new PluginMeta
 		{
 			Author = "g0dsCookie",
-			Description = "Automatically loads all your putty sessions and creates a launcher for them"
+			Description = Localization.strings.Plugin_Description
 		};
 
 		public override List<ICommandBase> AutoRegisterCommands { get; } = new List<ICommandBase>();

@@ -8,9 +8,9 @@ namespace CookieProjects.PuttyLauncher
 {
 	public class PuttyLoadPrivateKeysCommand : ICommandBase
 	{
-		public string Name => "PuTTY: Load private keys";
+		public string Name => Localization.strings.LoadPrivateKeys_Name;
 
-		public string Description => "Loads all private keys that are registered to your sessions.";
+		public string Description => Localization.strings.LoadPrivateKeys_Description;
 
 		public Image Icon => null;
 

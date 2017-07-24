@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Create_Base" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="Create_Base_Hostname" xml:space="preserve">
+    <value>Hostname</value>
+  </data>
+  <data name="Create_Base_IPVersion" xml:space="preserve">
+    <value>Internet Protocol Version</value>
+  </data>
+  <data name="Create_Base_IPVersion_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Create_Base_IPVersion_IPv4" xml:space="preserve">
+    <value>IPv4</value>
+  </data>
+  <data name="Create_Base_IPVersion_IPv6" xml:space="preserve">
+    <value>IPv6</value>
+  </data>
+  <data name="Create_Base_Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="Create_Base_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Create_Base_Verbose" xml:space="preserve">
+    <value>Verbose</value>
+  </data>
+  <data name="Create_Command" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="Create_Command_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Create_Command_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Create_Protocol" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="Create_Protocol_Raw" xml:space="preserve">
+    <value>Raw</value>
+  </data>
+  <data name="Create_Protocol_Rlogin" xml:space="preserve">
+    <value>Rlogin</value>
+  </data>
+  <data name="Create_Protocol_Serial" xml:space="preserve">
+    <value>Serial</value>
+  </data>
+  <data name="Create_Protocol_SSH" xml:space="preserve">
+    <value>SSH</value>
+  </data>
+  <data name="Create_Protocol_Telnet" xml:space="preserve">
+    <value>Telnet</value>
+  </data>
+  <data name="Create_Serial" xml:space="preserve">
+    <value>Serial</value>
+  </data>
+  <data name="Create_Serial_BaudRate" xml:space="preserve">
+    <value>Baud Rate</value>
+  </data>
+  <data name="Create_Serial_DataBits" xml:space="preserve">
+    <value>Data Bits</value>
+  </data>
+  <data name="Create_Serial_FlowControl" xml:space="preserve">
+    <value>Flow Control</value>
+  </data>
+  <data name="Create_Serial_FlowControl_DSR_DTR" xml:space="preserve">
+    <value>DSR/DTS</value>
+  </data>
+  <data name="Create_Serial_FlowControl_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Create_Serial_FlowControl_RTS_CTS" xml:space="preserve">
+    <value>RTS/CTS</value>
+  </data>
+  <data name="Create_Serial_FlowControl_XON_XOFF" xml:space="preserve">
+    <value>XON/XOFF</value>
+  </data>
+  <data name="Create_Serial_Parity" xml:space="preserve">
+    <value>Parity</value>
+  </data>
+  <data name="Create_Serial_Parity_Even" xml:space="preserve">
+    <value>Even</value>
+  </data>
+  <data name="Create_Serial_Parity_Mark" xml:space="preserve">
+    <value>Mark</value>
+  </data>
+  <data name="Create_Serial_Parity_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Create_Serial_Parity_Odd" xml:space="preserve">
+    <value>Odd</value>
+  </data>
+  <data name="Create_Serial_Parity_Space" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="Create_Serial_SerialLine" xml:space="preserve">
+    <value>Serial Line</value>
+  </data>
+  <data name="Create_Serial_StopBits" xml:space="preserve">
+    <value>Stop Bits</value>
+  </data>
+  <data name="Create_SSH" xml:space="preserve">
+    <value>SSH</value>
+  </data>
+  <data name="Create_SSH_ForwardAgent" xml:space="preserve">
+    <value>Forward Agent</value>
+  </data>
+  <data name="Create_SSH_OpenPrivateKey" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Create_SSH_PrivateKey" xml:space="preserve">
+    <value>Private Key</value>
+  </data>
+  <data name="Exception_Serial_DataBits_OutOfRange" xml:space="preserve">
+    <value>Value must be between 5 and 9.</value>
+  </data>
+  <data name="Exception_Serial_StopBits_OutOfRange" xml:space="preserve">
+    <value>Value must be 1, 1.5 or 2.</value>
+  </data>
+  <data name="LoadPrivateKeys_Description" xml:space="preserve">
+    <value>Loads all private keys that are registered to your sessions.</value>
+  </data>
+  <data name="LoadPrivateKeys_Name" xml:space="preserve">
+    <value>PuTTY: Load private keys</value>
+  </data>
+  <data name="Plugin_Description" xml:space="preserve">
+    <value>Automatically loads all your putty sessions and creates a launcher for them.</value>
+  </data>
+  <data name="PuttyLauncher_Description" xml:space="preserve">
+    <value>Launch PuTTY session {{session}}.</value>
+  </data>
+  <data name="PuttyLauncher_Name" xml:space="preserve">
+    <value>PuTTY: {{session}}</value>
+  </data>
+</root>
