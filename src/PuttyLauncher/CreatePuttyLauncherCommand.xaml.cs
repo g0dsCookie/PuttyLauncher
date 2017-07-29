@@ -15,6 +15,8 @@ namespace CookieProjects.PuttyLauncher
 	{
 		public string CommandTypeName => "PuTTY";
 
+		public string CommandDescription => "Add a new PuTTY command.";
+
 		public CreatePuttyLauncherCommand()
 		{
 			InitializeComponent();
