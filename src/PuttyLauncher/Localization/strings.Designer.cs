@@ -22,7 +22,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class strings {
+    public class strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CookieProjects.PuttyLauncher.Localization.strings", typeof(strings).Assembly);
@@ -51,7 +51,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Base.
         /// </summary>
-        internal static string Create_Base {
+        public static string Create_Base {
             get {
                 return ResourceManager.GetString("Create_Base", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Hostname.
         /// </summary>
-        internal static string Create_Base_Hostname {
+        public static string Create_Base_Hostname {
             get {
                 return ResourceManager.GetString("Create_Base_Hostname", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Internet Protocol Version.
         /// </summary>
-        internal static string Create_Base_IPVersion {
+        public static string Create_Base_IPVersion {
             get {
                 return ResourceManager.GetString("Create_Base_IPVersion", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Auto.
         /// </summary>
-        internal static string Create_Base_IPVersion_Auto {
+        public static string Create_Base_IPVersion_Auto {
             get {
                 return ResourceManager.GetString("Create_Base_IPVersion_Auto", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to IPv4.
         /// </summary>
-        internal static string Create_Base_IPVersion_IPv4 {
+        public static string Create_Base_IPVersion_IPv4 {
             get {
                 return ResourceManager.GetString("Create_Base_IPVersion_IPv4", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to IPv6.
         /// </summary>
-        internal static string Create_Base_IPVersion_IPv6 {
+        public static string Create_Base_IPVersion_IPv6 {
             get {
                 return ResourceManager.GetString("Create_Base_IPVersion_IPv6", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Port.
         /// </summary>
-        internal static string Create_Base_Port {
+        public static string Create_Base_Port {
             get {
                 return ResourceManager.GetString("Create_Base_Port", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Username.
         /// </summary>
-        internal static string Create_Base_Username {
+        public static string Create_Base_Username {
             get {
                 return ResourceManager.GetString("Create_Base_Username", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Verbose.
         /// </summary>
-        internal static string Create_Base_Verbose {
+        public static string Create_Base_Verbose {
             get {
                 return ResourceManager.GetString("Create_Base_Verbose", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Command.
         /// </summary>
-        internal static string Create_Command {
+        public static string Create_Command {
             get {
                 return ResourceManager.GetString("Create_Command", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
-        internal static string Create_Command_Description {
+        public static string Create_Command_Description {
             get {
                 return ResourceManager.GetString("Create_Command_Description", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
-        internal static string Create_Command_Name {
+        public static string Create_Command_Name {
             get {
                 return ResourceManager.GetString("Create_Command_Name", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Protocol.
         /// </summary>
-        internal static string Create_Protocol {
+        public static string Create_Protocol {
             get {
                 return ResourceManager.GetString("Create_Protocol", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Raw.
         /// </summary>
-        internal static string Create_Protocol_Raw {
+        public static string Create_Protocol_Raw {
             get {
                 return ResourceManager.GetString("Create_Protocol_Raw", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Rlogin.
         /// </summary>
-        internal static string Create_Protocol_Rlogin {
+        public static string Create_Protocol_Rlogin {
             get {
                 return ResourceManager.GetString("Create_Protocol_Rlogin", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Serial.
         /// </summary>
-        internal static string Create_Protocol_Serial {
+        public static string Create_Protocol_Serial {
             get {
                 return ResourceManager.GetString("Create_Protocol_Serial", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to SSH.
         /// </summary>
-        internal static string Create_Protocol_SSH {
+        public static string Create_Protocol_SSH {
             get {
                 return ResourceManager.GetString("Create_Protocol_SSH", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Telnet.
         /// </summary>
-        internal static string Create_Protocol_Telnet {
+        public static string Create_Protocol_Telnet {
             get {
                 return ResourceManager.GetString("Create_Protocol_Telnet", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Serial.
         /// </summary>
-        internal static string Create_Serial {
+        public static string Create_Serial {
             get {
                 return ResourceManager.GetString("Create_Serial", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Baud Rate.
         /// </summary>
-        internal static string Create_Serial_BaudRate {
+        public static string Create_Serial_BaudRate {
             get {
                 return ResourceManager.GetString("Create_Serial_BaudRate", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Data Bits.
         /// </summary>
-        internal static string Create_Serial_DataBits {
+        public static string Create_Serial_DataBits {
             get {
                 return ResourceManager.GetString("Create_Serial_DataBits", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Flow Control.
         /// </summary>
-        internal static string Create_Serial_FlowControl {
+        public static string Create_Serial_FlowControl {
             get {
                 return ResourceManager.GetString("Create_Serial_FlowControl", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to DSR/DTS.
         /// </summary>
-        internal static string Create_Serial_FlowControl_DSR_DTR {
+        public static string Create_Serial_FlowControl_DSR_DTR {
             get {
                 return ResourceManager.GetString("Create_Serial_FlowControl_DSR_DTR", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to None.
         /// </summary>
-        internal static string Create_Serial_FlowControl_None {
+        public static string Create_Serial_FlowControl_None {
             get {
                 return ResourceManager.GetString("Create_Serial_FlowControl_None", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to RTS/CTS.
         /// </summary>
-        internal static string Create_Serial_FlowControl_RTS_CTS {
+        public static string Create_Serial_FlowControl_RTS_CTS {
             get {
                 return ResourceManager.GetString("Create_Serial_FlowControl_RTS_CTS", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to XON/XOFF.
         /// </summary>
-        internal static string Create_Serial_FlowControl_XON_XOFF {
+        public static string Create_Serial_FlowControl_XON_XOFF {
             get {
                 return ResourceManager.GetString("Create_Serial_FlowControl_XON_XOFF", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Parity.
         /// </summary>
-        internal static string Create_Serial_Parity {
+        public static string Create_Serial_Parity {
             get {
                 return ResourceManager.GetString("Create_Serial_Parity", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Even.
         /// </summary>
-        internal static string Create_Serial_Parity_Even {
+        public static string Create_Serial_Parity_Even {
             get {
                 return ResourceManager.GetString("Create_Serial_Parity_Even", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Mark.
         /// </summary>
-        internal static string Create_Serial_Parity_Mark {
+        public static string Create_Serial_Parity_Mark {
             get {
                 return ResourceManager.GetString("Create_Serial_Parity_Mark", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to None.
         /// </summary>
-        internal static string Create_Serial_Parity_None {
+        public static string Create_Serial_Parity_None {
             get {
                 return ResourceManager.GetString("Create_Serial_Parity_None", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Odd.
         /// </summary>
-        internal static string Create_Serial_Parity_Odd {
+        public static string Create_Serial_Parity_Odd {
             get {
                 return ResourceManager.GetString("Create_Serial_Parity_Odd", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Space.
         /// </summary>
-        internal static string Create_Serial_Parity_Space {
+        public static string Create_Serial_Parity_Space {
             get {
                 return ResourceManager.GetString("Create_Serial_Parity_Space", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Serial Line.
         /// </summary>
-        internal static string Create_Serial_SerialLine {
+        public static string Create_Serial_SerialLine {
             get {
                 return ResourceManager.GetString("Create_Serial_SerialLine", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Stop Bits.
         /// </summary>
-        internal static string Create_Serial_StopBits {
+        public static string Create_Serial_StopBits {
             get {
                 return ResourceManager.GetString("Create_Serial_StopBits", resourceCulture);
             }
@@ -369,7 +369,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to SSH.
         /// </summary>
-        internal static string Create_SSH {
+        public static string Create_SSH {
             get {
                 return ResourceManager.GetString("Create_SSH", resourceCulture);
             }
@@ -378,7 +378,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Forward Agent.
         /// </summary>
-        internal static string Create_SSH_ForwardAgent {
+        public static string Create_SSH_ForwardAgent {
             get {
                 return ResourceManager.GetString("Create_SSH_ForwardAgent", resourceCulture);
             }
@@ -387,7 +387,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to ....
         /// </summary>
-        internal static string Create_SSH_OpenPrivateKey {
+        public static string Create_SSH_OpenPrivateKey {
             get {
                 return ResourceManager.GetString("Create_SSH_OpenPrivateKey", resourceCulture);
             }
@@ -396,7 +396,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Private Key.
         /// </summary>
-        internal static string Create_SSH_PrivateKey {
+        public static string Create_SSH_PrivateKey {
             get {
                 return ResourceManager.GetString("Create_SSH_PrivateKey", resourceCulture);
             }
@@ -405,7 +405,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Value must be between 5 and 9..
         /// </summary>
-        internal static string Exception_Serial_DataBits_OutOfRange {
+        public static string Exception_Serial_DataBits_OutOfRange {
             get {
                 return ResourceManager.GetString("Exception_Serial_DataBits_OutOfRange", resourceCulture);
             }
@@ -414,7 +414,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Value must be 1, 1.5 or 2..
         /// </summary>
-        internal static string Exception_Serial_StopBits_OutOfRange {
+        public static string Exception_Serial_StopBits_OutOfRange {
             get {
                 return ResourceManager.GetString("Exception_Serial_StopBits_OutOfRange", resourceCulture);
             }
@@ -423,7 +423,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Loads all private keys that are registered to your sessions..
         /// </summary>
-        internal static string LoadPrivateKeys_Description {
+        public static string LoadPrivateKeys_Description {
             get {
                 return ResourceManager.GetString("LoadPrivateKeys_Description", resourceCulture);
             }
@@ -432,7 +432,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to PuTTY: Load private keys.
         /// </summary>
-        internal static string LoadPrivateKeys_Name {
+        public static string LoadPrivateKeys_Name {
             get {
                 return ResourceManager.GetString("LoadPrivateKeys_Name", resourceCulture);
             }
@@ -441,7 +441,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Automatically loads all your putty sessions and creates a launcher for them..
         /// </summary>
-        internal static string Plugin_Description {
+        public static string Plugin_Description {
             get {
                 return ResourceManager.GetString("Plugin_Description", resourceCulture);
             }
@@ -450,7 +450,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to Launch PuTTY session {{session}}..
         /// </summary>
-        internal static string PuttyLauncher_Description {
+        public static string PuttyLauncher_Description {
             get {
                 return ResourceManager.GetString("PuttyLauncher_Description", resourceCulture);
             }
@@ -459,7 +459,7 @@ namespace CookieProjects.PuttyLauncher.Localization {
         /// <summary>
         ///   Looks up a localized string similar to PuTTY: {{session}}.
         /// </summary>
-        internal static string PuttyLauncher_Name {
+        public static string PuttyLauncher_Name {
             get {
                 return ResourceManager.GetString("PuttyLauncher_Name", resourceCulture);
             }
