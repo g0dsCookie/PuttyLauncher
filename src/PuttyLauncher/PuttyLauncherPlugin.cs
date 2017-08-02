@@ -29,5 +29,10 @@ namespace CookieProjects.PuttyLauncher
 
 			base.OnLoad();
 		}
+
+		~PuttyLauncherPlugin()
+		{
+			Config.GlobalConfig.Save(Config.ConfigurationFile);
+		}
 	}
 }
