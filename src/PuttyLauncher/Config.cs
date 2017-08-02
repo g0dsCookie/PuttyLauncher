@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
@@ -7,19 +8,13 @@ namespace CookieProjects.PuttyLauncher
 {
 	public class Config
 	{
-		static Config _GlobalConfig = null;
+		public static string ConfigurationFile =>
+			Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+			"IrataProjects",
+			"WinCommandPalette",
+			"PuttyLauncher.xml");
 
-		public static Config GlobalConfig
-		{
-			get
-			{
-				if (_GlobalConfig == null)
-				{
-					_GlobalConfig = Load("PuttyLauncher.xml");
-				}
-				return _GlobalConfig;
-			}
-		}
+		public static Config GlobalConfig { get; } = Load(ConfigurationFile);
 
 		public bool LoadSessions { get; set; }
 
